@@ -1,17 +1,128 @@
-.page{width:80vw;height:80vh;border:1px solid red}
-nav ul li{display:inline;}
-#page1{background:red}
-#page2{background:green}
-#page3{background:blue}
+.container{display: flex; flex-wrap: wrap; margin:auto;}
+.header{height: 100px; box-sizing: border-box; padding: 10px; background:black; flex:1; text-align:center;}
+h1{font-family:Helvetica; color: white;}
+p{font-size:20px; font-family:Helvetica; color: white}
+
+ul{list-style-type: none; margin:0; padding:0; display:inline; display:block; padding:8px; background-color:red;}
+
+.page{border:1px solid black}
+/*nav ul li{display:inline; text-align:center;}*/
+li{display:inline; float:center;}
+a{display:block; padding:8px;}
+#Buses{background-color:#2F8A9D;}
+#MRT{background-color:red;}
+#hamIcon{background-color:white;text-align:center;float:center;border:10px solid black;}
+ul{background-color:black;}
+li a{display:block; color:white; text-align:center; padding: 14px 16px; text-decoration:none;}
+#page1{background:#2F8A9D; padding-left:10px; padding-right:10px;}
+#page2{background:#870000; padding-left:10px; padding-right:10px;}
 
 #hamIcon{display:none;}
+
+#basic{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out;}
+#cityDirect{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out;}
+#express{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out;}
+#premium{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out;}
+
+#single{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out;}
+#bendy{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out;}
+#double{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out;}
+
+#NSL{background-color:#D42E12; overflow:hidden; transition: max-height 0.2s ease-out;}
+#EWL{background-color:#009645; overflow:hidden; transition: max-height 0.2s ease-out;}
+#NEL{background-color:#9900AA; overflow:hidden; transition: max-height 0.2s ease-out;}
+#CCL{background-color:#FA9E0D; overflow:hidden; transition: max-height 0.2s ease-out;}
+#DTL{background-color:#005EC4; overflow:hidden; transition: max-height 0.2s ease-out;}
+#TEL{background-color:#9D5B25; overflow:hidden; transition: max-height 0.2s ease-out;}
 
 @media screen and (max-width:800px){
 	nav ul li{display:block;}
 	#hamIcon{display:block;}
 	nav ul{display:none;}
+	#page1{height:150vh;}
 }
 
 #menuList.menuShow{
 	display:block;
 }
+
+div.animate{width:100%; overflow:hidden;}
+div.animate p{animation: slide-left 3s;}
+
+div.animateH{width:100%; overflow:hidden;}
+div.animateH h1{animation: slide-left 2s;}
+
+div.animateS{width:100%; overflow:hidden;}
+div.animateS h1{animation: slide-left 1s;}
+
+@keyframes slide-left{from{margin-left:100%; width:100%;} to{margin-left:0%; width:100%;}}
+
+.gallery-container{max-width:1000px; position:relative; margin:auto;}
+.MRTSlides{display:none;}
+.BusSlides{display:none;}
+
+.prev, .next{
+	cursor:pointer;
+	position:absolute;
+	top:50%;
+	width:auto:
+	margin-top: -22px;
+	padding:16px;
+	color:white;
+	font-weight:bold;
+	font-size:18px;
+	transition:0.6s ease;
+	border-radius:0 3px 3px 0;
+	user-select:none;
+}
+
+.next{
+	right:0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+	background-color:rgba{0,0,0,0.8};
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.dot1 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot1:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.caption{font-family:Helvetica; text-align:center; color:white;}

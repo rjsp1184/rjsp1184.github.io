@@ -7,22 +7,278 @@
 		<script src="script.js" defer></script>
 	</head>
 	<header>
-		<h1>Main Topic</h1>
+		<div class="container">
+			<div class="header"><h1>Public Transport in Singapore</h1></div>
+		</div>
 	</header>
 	<nav>
-		<button id="hamIcon">Menu</button>
-		<ul id="menuList">
-			<li><button id="page1btn">Sub Topic 1</button></li>
-			<li><button id="page2btn">Sub Topic 2</button></li>
-			<li><button id="page3btn">Sub Topic 3</button></li>
-		</ul>
+		<a id="hamIcon">Menu</a>
+		<center><ul id="menuList">
+			<li id="page1btn"><a id="Buses">Buses</a></li>
+			<li id="page2btn"><a id="MRT">MRT</a></li>
+		</ul></center>
 	</nav>
 	<div id="pagecontainer">
 		<div class="page" id="page1">
-			page 1 content
+			<div class="animateH"><h1>About SG's Public buses</h1></div>
+			<div class="animate"><p>Singapore's modern public bus system is run by 4 operators - SBS Transit, SMRT, Tower Transit
+			and Go-Ahead Singapore. All of the public bus system is owned and designed by LTA under the Bus
+			Contracting Model(BCM) which is why newer buses are now under a unified Lush Green livery. 
+			The 4 different operators bid for bus route packages to operate the bus services under each package 
+			and will be paid service fees with bonuses and penalties depending on their performance.</p></div>
+			
+			<div class="animate"><p>The roles of bus operators under the BCM is to operate services under their packages with 
+			specified performance standards, maintain their bus fleet, depots and interchanges, collect fares on
+			behalf of the governmen and provide bus service information and customer management services.</p></div>
+			
+			<div class="animateH"><h1>Why the Bus Contracting Model?</h1></div>
+			<div class="animate"><p>The BCM allows the 4 operators in SG to focus more on operations and meeting service standards and allows
+			LTA to respond quickly to any changes in service demands. It also allows for market competition which 
+			encourages operators to provide better bus services for commuters - through more reliable bus services 
+			with less waiting time between buses. This contract model is also seen in places like London and certain
+			Australian cities.</p></div>
+			
+			<div class="animateH"><h1>Types of Public Bus services in SG</h1></div>
+			<center><ul id="ServiceList">
+			
+				<li id="basicSvc"><a id="basic">Basic Bus Services</a></li>
+				<div class="Svcs" id="basicPg">
+					<div class="animateS"><h1>Basic Bus Services</h1></div>
+					<div class="animate"><p>Basic bus services in SG consists of Trunk and Feeder services. Trunk
+					services are long bus routes that connect multiple towns across SG, or connect multiple towns
+					with the city area. Feeder services on the other hand, operate around neighbourhoods in a town
+					to connect to various parts of housing estates with bus interchanges and MRT stations.</p></div>
+				</div>
+				
+				<li id="cityDirectSvc"><a id="cityDirect">City Direct Services</a></li>
+				<div class="Svcs" id="cityPg">
+					<div class="animateS"><h1>City Direct Services</h1></div>
+					<div class="animate"><p>City Direct services in SG are bus routes that connect residential estates
+					with the Central Business District(CBD). These services operate only during peak hours and have
+					set boarding and alighting points - passengers can only board at residential stops in the morning
+					and CBD stops in the evening and can only alight at residential stops in the evening and CBD stops
+					in the morning. These services charge fares similar to that of express services.</p></div>
+				</div>
+				
+				<li id="expressSvc"><a id="express">Express Services</a></li>
+				<div class="Svcs" id="expressPg">
+					<div class="animateS"><h1>Express Services</h1></div>
+					<div class="animate"><p>Express bus services are services that have express sectors, either by skipping
+					bus stops or travelling on expressways. This saves travel time compared to taking regular trunk services.
+					However, they do charge higher fares due to the added convenience. Express services can be classified in
+					3 groups - Full Day, Limited-Stop and CBD express services. Full Day express services connects residential
+					areas to the city or between towns, Limited-stop express services follow their parent route but stops at
+					fewer bus stops on the route and CBD express services are similar to City Direct services, except that
+					there are no set boarding and alighting points and passengers are free to board or alight at any stop along
+					the route.</p></div>
+				</div>
+				
+				<li id="premiumSvc"><a id="premium">Premium Services</a></li>
+				<div class="Svcs" id="premiumPg">
+					<div class="animateS"><h1>Premium Services</h1></div>
+					<div class="animate"><p>Premium services are similar to City Direct services by connecting residential areas 
+					with work areas like the CBD, business parks and industrial areas. However, they use private coach buses and
+					are charged a flat fare ranging from $3 to $6 which makes Premium services more expensive than regular public
+					transport but cheaper than taxis or private hire vehicles.</p></div>
+				</div>
+				
+			</ul></center>
+			
+			<div class="animateH"><h1>Types of Public Buses seen in SG</h1></div>
+			<center><ul id="BusList">
+				<li id="singleBus"><a id="single">Single Deckers</a></li>
+				<div class="Buses" id="singlePg">
+					<div class="animateS"><h1>Single Deckers</h1></div>
+					<div class="animate"><p>Single Deckers are the most common type of public bus in SG with over 3,300 of them.
+					These buses are usually 12 metres in length with 2 axles and 2 doors(newer models have 3 doors) with a single floor.
+					Single deckers have a capacity of around 70 passengers at full load, suitable for routes with low to medium demand
+					or frequent buses.</p></div>
+				</div>
+				
+				<li id="bendyBus"><a id="bendy">Bendy Buses</a></li>
+				<div class="Buses" id="bendyPg">
+					<div class="animateS"><h1>Bendy Buses</h1></div>
+					<div class="animate"><p>Bendy buses(also known as articulated buses) in SG today are the rarest type of public bus
+					with only 40 of them left. They can mostly be found in areas such as Choa Chu Kang, Woodlands and Yishun. 
+					The only bendy bus model in SG left is the MAN A24 bus, which is 18 metres long with 3 axles and 3 doors. These buses
+					have a capacity of 130-131 passengers at full load, suitable for routes with high demand.</p></div>
+				</div>
+				
+				<li id="doubleBus"><a id="double">Double deckers</a></li>
+				<div class="Buses" id="doublePg">
+					<div class="animateS"><h1>Double Deckers</h1></div>
+					<div class="animate"><p>Double deckers in SG have become even more commonplace today due to many double decker buses
+					being ordered to replace old bendy buses operated by SMRT as well as to increase fleet capacity. There are around
+					2,500 of them operating across the island today. These buses are usually 12 metres in length with 3 axles and 2
+					doors(newer models have 3 doors) with 2 floors. The bottom deck is able to carry both seating and standing passengers
+					while the top deck is only able to carry seating passengers due to safety concerns and a low roof height. Double
+					deckers have a capacity of around  139 passengers at full load, suitable for routes with high demand.</p></div>
+				</div>
+			</ul></center>
+			
+			<div class="animateH"><h1>Gallery</h1></div>
+			<div class="gallery-container">
+				<div class="BusSlides fade">
+					<img src="Images/77.jpg" alt="Image of a 77 bus leaving Bukit Batok Interchange" width=100%>
+					<div class="caption">77 bus leaving Bukit Batok Interchange with a trial display scroll where only the service
+					number is displayed big and bold</div>
+				</div>
+				
+				<div class="BusSlides fade">
+					<img src="Images/k9.jpg" alt="Image of a BYD K9 electric bus on 162M" width=100%>
+					<div class="caption">BYD K9 electric bus on service 162M outside Plaza Singapura</div>
+				</div>
+				
+				<div class="BusSlides fade">
+					<img src="Images/a24.jpg" alt="Image of a MAN A24 bendy bus on 912" width=100%>
+					<div class="caption">MAN A24 bendy bus on service 912 leaving Woodlands Integrated Transport Hub</div>
+				</div>
+				
+				<div class="BusSlides fade">
+					<img src="Images/a95.jpg" alt="Image of a 3-Door MAN A95 double decker bus on 83" width=100%>
+					<div class="caption">3-Door variant of an Euro 6 MAN A95 double decker bus on service 83 leaving 
+					Sengkang Interchange</div>
+				</div>
+				
+				<a class="prev" onclick="plusBusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusBusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			
+			<center>
+				<span class="dot1" onclick="currentBusSlide(1)"></span>
+				<span class="dot1" onclick="currentBusSlide(2)"></span>
+				<span class="dot1" onclick="currentBusSlide(3)"></span>
+				<span class="dot1" onclick="currentBusSlide(4)"></span>
+			</center>
+			
 		</div>
 		<div class="page" id="page2">
-			page 2 content
+			<div class="animateH"><h1>About SG's MRT system</h1></div>
+			<div class="animate"><p>Singapore's MRT system first opened in 1987 with a section of the North-South Line in the city.
+			Today, there are 140 stations across 6 MRT lines and over 200km of track. The MRT system is operated by SMRT and SBS
+			Transit. SMRT operates the North-South, East-West, Circle and Thomson-East Coast Lines while SBS Transit operates the 
+			North-East and Downtown Lines. The entirety of the MRT network is either elevated or underground with mobile data
+			services across the entire network.</p></div>
+			
+			<div class="animateH"><h1>MRT Lines in SG</h1></div>
+			<center><ul id="LineList">
+				<li id="NSLine"><a id="NSL">North-South Line</a></li>
+				<div class="Lines" id="NSPg">
+					<div class="animateS"><h1>North-South Line</h1></div>
+					<div class="animate"><p>The North-South Line(NSL) is the first MRT line to open in Singapore in 1987. The
+					first section of the line to open was between Yio Chu Kang and Toa Payoh. Today, it runs 45 kilometres with
+					27 stations from Jurong East to Marina South Pier via Woodlands. Trains on the NSL run a 6-car formation with 4
+					doors per car. Since 2019, the NSL has upgraded its signalling system to have automatic train operations. Several
+					other improvements have been made to the line since its opening, with platform screen doors being installed
+					at overground stations, new stations like Canberra and introduction of new rolling stocks to increase capacity 
+					and replace older models.</p></div>
+				</div>
+				
+				
+				<li id="EWLine"><a id="EWL">East-West Line</a></li>
+				<div class="Lines" id="EWPg">
+					<div class="animateS"><h1>East-West Line</h1></div>
+					<div class="animate"><p>The East-West Line(EWL) is the second MRT line to be open in Singapore in 1987 from
+					City Hall to Outram Park. Today, it is the longest MRT line in SG at 57.2 kilometres long with 35 stations from
+					Pasir Ris to Tuas Link and a branch line from Tanah Merah to Changi Airport. Trains and equipment on the EWL are
+					similar to that of the NSL and has fully automatic train operations as well. There used to be trains that ran direct 
+					from Boon Lay to Changi Airport but the Changi branch line was converted to a shuttle service due to low ridership.
+					Today, trains run from Pasir Ris to Joo Koon, with every few westbound trains terminating at Tuas Link instead.</p></div>
+				</div>
+				
+				
+				<li id="NELine"><a id="NEL">North-East Line</a></li>
+				<div class="Lines" id="NEPg">
+					<div class="animateS"><h1>North-East Line</h1></div>
+					<div class="animate"><p>The North-East Line(NEL) is SG's third MRT line, opening in 2003. At 20 kilometres long
+					with 16 stations from Punggol to HarbourFront, it is SG's shortest MRT line. The line is famous for being the world's
+					first fully-automated underground driverless heavy rail line. Trains on the NEL are powered by overhead wires and
+					run 6 car formations with 4 doors per car. In terms of development, there is currently an extension from Punggol
+					to Punggol Coast which is under construction and is expected to open in 2024. 2 stations - Buangkok and Woodleigh were
+					opened in 2006 and 2011 respectively to serve the increased demand due to developments in the area. Stations on the 
+					line are wheelchair-accessible and most of them are Civil Defence shelters which can withstand airstrikes and 
+					chemical attacks.</p></div>
+				</div>
+				
+				
+				<li id="CCLine"><a id="CCL">Circle Line</a></li>
+				<div class="Lines" id="CCPg">
+					<div class="animateS"><h1>Circle Line</h1></div>
+					<div class="animate"><p>The Circle Line(CCL) is SG's fourth MRT line to be opened in 2009. It currently runs in 
+					an incomplete loop from Dhoby Ghaut to HarbourFront via Bishan and a branch to Marina Bay from Promenade. in 2026,
+					the circle line will finally be a complete loop with the line being connected from HarbourFront to Marina Bay with 
+					3 stations in between. The line is 35.5 kilometres long with 30 stations currently. The line is similar to that of 
+					the NEL in that it is both completely automated and fully underground. However, trains draw power from a third rail 
+					and are only 3 cars long with 4 doors each car.</p></div>
+				</div>
+				
+				
+				<li id="DTLine"><a id="DTL">Downtown Line</a></li>
+				<div class="Lines" id="DTPg">
+					<div class="animateS"><h1>Downtown Line</h1></div>
+					<div class="animate"><p>The Downtown Line(DTL) is SG's fifth MRT line with the first stage opening in 2013. As of 
+					today, it runs 41.9 kilometres from Bukit Panjang to Expo via the city area. It is fully automated and underground 
+					like the NEL and CCL and trains on the DTL run 3 car formations with 4 doors each car. There are currently plans to
+					extend the line from Expo to connect it with the Thomson-East Coast line at Sungei Bedok and is expected to be 
+					completed in 2025. Hume station would also be opened by 2025 to serve Hillview residents and an extension from Bukit 
+					Panjang to Sungei Kadut(an upcoming station on the NSL) was announced to be completed by mid-2030s.</p></div>
+				</div>
+				
+				
+				<li id="TELine"><a id="TEL">Thomson-East Coast Line</a></li>
+				<div class="Lines" id="TEPg">
+					<div class="animateS"><h1>Thomson-East Coast Line</h1></div>
+					<div class="animate"><p>The Thomson-East Coast Line(TEL) is the sixth MRT line in SG to be opened in 2020. Currently,
+					it runs between Woodlands North and Gardens-by-the-Bay. When fully completed, the line will serve 32 stations over 
+					43 kilometres from Woodlands North to Sungei Bedok. There are also plans for the line to merge with the existing Changi 
+					branch on the EWL. The trains on the TEL run 4 car formations with 5 doors per car, a first for SG. The TEL is a result
+					of the merger between plans for a Thomson Line and the east coast stretch of the Eastern Region Line.</p></div>
+				</div>
+				
+				
+			</ul></center>
+			
+			<div class="animateH"><h1>MRT System Map<h1></div>
+			<center>
+			<div id="MRTMap"><img src="Images/MRTmap.png" alt="Map of the MRT network in SG" height=1000></div>
+			</center>
+			
+			<div class="animateH"><h1>Gallery</h1></div>
+			<div class="gallery-container">
+				<div class="MRTSlides fade">
+					<img src="Images/r151.jpg" alt="Image of r151 leaving Tuas West Depot" width=100%>
+					<div class="caption">R151(7th Generation NSEWL rolling stock) Leaving Tuas West Depot to 
+					start service at Tuas Link</div>
+				</div>
+			
+				<div class="MRTSlides fade">
+					<img src="Images/c651.jpg" alt="Image of c651 leaving Dover Station" width=100%>
+					<div class="caption">C651(2nd Generation NSEWL rolling stock) Leaving Dover Station towards 
+					Pasir Ris</div>
+				</div>
+			
+				<div class="MRTSlides fade">
+					<img src="Images/GBTB.jpg" alt="Image of Exit 1 at Gardens-by-the-Bay Station" width=100%>
+					<div class="caption">Exit 1 of Gardens-by-the-Bay Station on the TEL</div>
+				</div>
+				
+				<div class="MRTSlides fade">
+					<img src="Images/DTLpis.jpg" alt="Image of the new Passenger Information System being rolled out across the DTL fleet" width=100%>
+					<div class="caption">New Passenger Information System being installed across the DTL fleet</div>
+				</div>
+				
+				<a class="prev" onclick="plusMRTSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusMRTSlides(1)">&#10095;</a>
+			</div>
+			<br>
+			
+			<center>
+				<span class="dot" onclick="currentMRTSlide(1)"></span>
+				<span class="dot" onclick="currentMRTSlide(2)"></span>
+				<span class="dot" onclick="currentMRTSlide(3)"></span>
+				<span class="dot" onclick="currentMRTSlide(4)"></span>
+			</center>
 		</div>
 		<div class="page" id="page3">
 			page 3 content
