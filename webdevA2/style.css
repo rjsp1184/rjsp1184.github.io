@@ -49,6 +49,16 @@ li a{display:block; color:white; text-align:center; padding: 14px 16px; text-dec
 	.QRCode{display:none;}
 }
 
+@media screen and (max-width:540px){
+	nav ul li{display:block;}
+	/*#hamIcon{display:block;}*/
+	/*nav ul{display:none;}*/
+	#MRTMap{height:250px;}
+	p{font-size:18px;}
+	h1{font-size:22px;}
+	.QRCode{display:none;}
+}
+
 #menuList.menuShow{
 	display:block;
 }
