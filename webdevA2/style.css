@@ -1,5 +1,7 @@
 .container{display: flex; flex-wrap: wrap; margin:auto;}
 .header{height: 100px; box-sizing: border-box; padding: 10px; background:black; flex:1; text-align:center;}
+.QRCode{display:flex; flex-wrap: wrap; margin:auto;}
+.QRHeader{text-align:center; box-sizing: border-box; padding: 10px; background:black; flex:100%;}
 h1{font-family:Helvetica; color: white;}
 p{font-size:20px; font-family:Helvetica; color: white}
 
@@ -9,8 +11,8 @@ ul{list-style-type: none; margin:0; padding:0; display:inline; display:block; pa
 /*nav ul li{display:inline; text-align:center;}*/
 li{display:inline; float:center;}
 a{display:block; padding:8px;}
-#Buses{background-color:#2F8A9D;}
-#MRT{background-color:red;}
+#Buses{background-color:#2F8A9D; font-family:Helvetica;}
+#MRT{background-color:red; font-family:Helvetica;}
 #hamIcon{background-color:white;text-align:center;float:center;border:10px solid black;}
 ul{background-color:black;}
 li a{display:block; color:white; text-align:center; padding: 14px 16px; text-decoration:none;}
@@ -19,27 +21,32 @@ li a{display:block; color:white; text-align:center; padding: 14px 16px; text-dec
 
 #hamIcon{display:none;}
 
-#basic{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out;}
-#cityDirect{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out;}
-#express{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out;}
-#premium{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out;}
+#basic{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out; font-family:Helvetica;}
+#cityDirect{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out; font-family:Helvetica;}
+#express{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out; font-family:Helvetica;}
+#premium{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out; font-family:Helvetica;}
 
-#single{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out;}
-#bendy{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out;}
-#double{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out;}
+#single{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out; font-family:Helvetica;}
+#bendy{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out; font-family:Helvetica;}
+#double{background-color:#013970; overflow:hidden; transition: max-height 0.2s ease-out; font-family:Helvetica;}
 
-#NSL{background-color:#D42E12; overflow:hidden; transition: max-height 0.2s ease-out;}
-#EWL{background-color:#009645; overflow:hidden; transition: max-height 0.2s ease-out;}
-#NEL{background-color:#9900AA; overflow:hidden; transition: max-height 0.2s ease-out;}
-#CCL{background-color:#FA9E0D; overflow:hidden; transition: max-height 0.2s ease-out;}
-#DTL{background-color:#005EC4; overflow:hidden; transition: max-height 0.2s ease-out;}
-#TEL{background-color:#9D5B25; overflow:hidden; transition: max-height 0.2s ease-out;}
+#NSL{background-color:#D42E12; overflow:hidden; transition: max-height 0.2s ease-out; font-family:Helvetica;}
+#EWL{background-color:#009645; overflow:hidden; transition: max-height 0.2s ease-out; font-family:Helvetica;}
+#NEL{background-color:#9900AA; overflow:hidden; transition: max-height 0.2s ease-out; font-family:Helvetica;}
+#CCL{background-color:#FA9E0D; overflow:hidden; transition: max-height 0.2s ease-out; font-family:Helvetica;}
+#DTL{background-color:#005EC4; overflow:hidden; transition: max-height 0.2s ease-out; font-family:Helvetica;}
+#TEL{background-color:#9D5B25; overflow:hidden; transition: max-height 0.2s ease-out; font-family:Helvetica;}
+
+#MRTMap{display:flex;height:1000px; justify-content:center;}
 
 @media screen and (max-width:800px){
 	nav ul li{display:block;}
-	#hamIcon{display:block;}
-	nav ul{display:none;}
-	#page1{height:150vh;}
+	/*#hamIcon{display:block;}*/
+	/*nav ul{display:none;}*/
+	#MRTMap{height:600px;}
+	p{font-size:18px;}
+	h1{font-size:22px;}
+	.QRCode{display:none;}
 }
 
 #menuList.menuShow{
